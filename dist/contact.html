@@ -61,48 +61,47 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
+                            <!-- Horizontal form: each label sits on one line with its input -->
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
-                                <br />
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        To activate this form, sign up at
-                                        <br />
-                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="inputEmail">Email</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" id="inputEmail" type="email" />
                                     </div>
                                 </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                <!-- Submit Button-->
-                                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="inputPassword">Password</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" id="inputPassword" type="password" />
+                                    </div>
+                                </div>
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="gridRadios1" type="radio" name="gridRadios" value="option1" checked />
+                                            <label class="form-check-label" for="gridRadios1">First radio</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="gridRadios2" type="radio" name="gridRadios" value="option2" />
+                                            <label class="form-check-label" for="gridRadios2">Second radio</label>
+                                        </div>
+                                        <div class="form-check disabled">
+                                            <input class="form-check-input" id="gridRadios3" type="radio" name="gridRadios" value="option3" disabled />
+                                            <label class="form-check-label" for="gridRadios3">Third disabled radio</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="row mb-3">
+                                    <div class="col-sm-10 offset-sm-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="gridCheck1" type="checkbox" />
+                                            <label class="form-check-label" for="gridCheck1">Example checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Submit Button: the sample template's "Sign in" relabelled to "Send"-->
+                                <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
                             </form>
                         </div>
                     </div>
