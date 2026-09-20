@@ -1,0 +1,30 @@
+// Post preview cards on the home page.
+// A fixed image height and a fixed body height keep all four cards identical.
+// Clamping the title and the text stops either from spilling out of the card.
+.post-card {
+    .card-img-top {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        height: 180px;
+        overflow: hidden;
+    }
+
+    .card-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+}
