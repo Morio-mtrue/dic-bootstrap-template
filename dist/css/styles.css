@@ -10796,3 +10796,28 @@ header.masthead .post-heading .meta a {
     font-size: 2.25rem;
   }
 }
+.post-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.post-card .card-body {
+  height: 180px;
+  overflow: hidden;
+}
+
+.post-card .card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.post-card .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0;
+}
